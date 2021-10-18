@@ -1,0 +1,9 @@
+sudo: required
+serivices:
+  - docker
+
+before_install:
+  - docker build -t mtalii/docker-react -f Dockerfile.dev .
+
+scripts:
+  - docker run mtalii/docker-react npm run test -- --coverage
