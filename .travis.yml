@@ -7,3 +7,5 @@ before_install:
 
 scripts:
   - docker run mtalii/docker-react npm run test -- --coverage
+
+  
